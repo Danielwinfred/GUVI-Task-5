@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 public class AgeCalculator {
     public static void main(String[] args) {
-        // Create a scanner to take input
+        //  to take input
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt the user for their birthdate
+        // birthdate
         System.out.print("Enter your birthdate (yyyy-mm-dd): ");
         String birthdateString = scanner.nextLine();
 
-        // Convert the input string to a LocalDate object
+        // string to a LocalDate object
         LocalDate birthdate = LocalDate.parse(birthdateString);
 
-        // Get the current date
+        // Getting current date
         LocalDate currentDate = LocalDate.now();
 
-        // Calculate the period between the birthdate and the current date
+        //  period between the birthdate and the current date
         Period period = Period.between(birthdate, currentDate);
 
         // Output the age in years, months, and days
